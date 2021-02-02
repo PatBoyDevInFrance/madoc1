@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Symfony</title>
+</head>
+<body>
+    
+    <div >
+        <a id="item-0" type="button" href="/index.html " class="btn btn-secondary float-left" >Accueil</a>
+
+    </div>
+    <!--titre-->
+    <div class="jumbotron ">
+        <h1 class="text-center" >Symfony</h1>
+    </div>
+    <div class="container">
+    <div class="" >           
+
+        <h4 id="item-30" style="color: orange;" >Rappel : </h4>
+        <p>Symfony est un ensemble de composants PHP ainsi qu'un framework MVC libre écrit en PHP. Il fournit des fonctionnalités modulables et adaptables qui permettent de faciliter et d’accélérer le développement d'un site web.</p>
+           <span style="color:rgb(0, 145, 255);">en savoir plus : </span>
+           <a href="https://symfony.com/doc/current/index.html" target="blank">Doc Symfony</a>
+      <p></p>
+    </div>
+</div>
+<div class="container">
+  <div class="jumbotron col-12 col-lg-12">
+    <h3 class="ml-4 text-left" style="color: rgb(250, 96, 183);" >Plus loin dans Le code</h3>
+        <a href="#code-1" class="btn btn-danger m-2">findBy</a>
+        <a href="#code-2" class="btn btn-danger m-2">TDD</a>
+        <a href="#code-3" class="btn btn-danger m-2">Doctrine 2</a>
+        <a href="#code-4" class="btn btn-danger m-2">L'EntityManager</a>
+        <a href="#code-5" class="btn btn-danger m-2">number_format</a>
+        <a href="#code-6" class="btn btn-danger m-2">no name</a>
+    </div> 
+    
+    <!--les Raccourcie-->
+    <div class="jumbotron col-12 col-lg-12">
+        <div >
+            <br>
+              <h3 class="ml-4 text-left" style="color: rgb(155, 254, 227);" >mise en place d'un projet</h3>
+        </div>
+        <a href="#item-1" class="btn btn-secondary m-2">Mise en place d'un nouveau</a>
+        <a href="#item-2" class="btn btn-secondary m-2">Les fixtures</a>
+        <a href="#item-3" class="btn btn-secondary m-2">paginator</a>
+        <a href="#item-4" class="btn btn-secondary m-2">Les filtres</a>
+        <a href="#item-5" class="btn btn-secondary m-2">CRUD prépa</a>
+        <a href="#item-6" class="btn btn-secondary m-2">CRUD</a>
+        <a href="#item-7" class="btn btn-secondary m-2">Gestion d'utilisateur</a>
+        <a href="#item-8" class="btn btn-secondary m-2">Login / Logout</a>
+        <a href="#item-9" class="btn btn-secondary m-2">Les rôles</a>
+        <a href="#item-10" class="btn btn-secondary m-2">La mise en ligne</a>
+        <a href="#item-11" class="btn btn-secondary m-2">Panier</a>
+        <a href="#item-12" class="btn btn-secondary m-2">Mail jet</a>
+        <a href="#item-13" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-14" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-15" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-16" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-17" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-18" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-19" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-20" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-21" class="btn btn-secondary m-2">no name</a>
+        <a href="#item-22" class="btn btn-secondary m-2">no name</a>
+  </div> 
+
+  <div class="jumbotron col-12 col-lg-12">
+    <h3 class="ml-4 text-left" style="color: rgb(250, 96, 183);" >Gestion des erreurs</h3>
+        <a href="#erreur-1" class="btn btn-warning m-2">ArrayField (conversion en string)</a>
+        <a href="#erreur-2" class="btn btn-warning m-2">no name</a>
+        <a href="#erreur-3" class="btn btn-warning m-2">no name</a>
+        <a href="#erreur-4" class="btn btn-warning m-2">no name</a>
+        <a href="#erreur-5" class="btn btn-warning m-2">no name</a>
+        <a href="#erreur-6" class="btn btn-warning m-2">no name</a>
+    </div> 
+  
+  
+<!--titre-->
+  <div class= " jumbotron col-12 col-lg-12 ">
+    <div>
+      <br>
+        <h3 class="ml-4 text-left" style="color:orange;" >Les projets</h3>
+    </div>
+
+    <a href="/projetsSymfony/ecommerce.html" class="btn btn-primary m-2">E-commerce</a>
+    <a href="#item-21" class="btn btn-primary m-2">Agence immobilière</a>
+    <a href="#item-22" class="btn btn-primary m-2">TDD</a>
+    <a href="#item-22" class="btn btn-primary m-2">no name</a>
+  </div>
+</div>
+  <!--Dans le code-->
+  <div class="container">
+      <h2 class="display-2">Dans le code</h2>
+  </div>
+  
+  <div class="container">
+
+<!-- Bloc  -->
+  <div class="jumbotron question">
+    
+    <div class="visible-pannel">
+        
+        <h2 id="code-1" >find</h2>
+    </div>
+    <br>
+    <div class="toggle-pannel">     
+        <h4 style="color: orange;">définition :</h4>
+        
+    <p> - find($id) te permet de récupérer un objet à partir d'un identifiant.<br>
+        - findBy(array()) te permet de récupérer une liste d'objets à partir des champs souhaités. Exemple : findBy(array('nom' => 'Symfony')) retournera une liste d'objets comportant le nom "Symfony".<br>
+        - findOneBy(array()) a le même comportement que findBy pour effectuer la recherche, mais ne retourne qu'un seul résultat. <br>
+        <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/working-with-objects.html#by-simple-conditions" target="blanc">en savoir plus : Doctrine findOneBy</a>
+    </p>
+    
+    </div>
+    <a href="#item-0" class="btn btn-info m-2">retour</a> 
+  </div>
+
+<!--Fin-->
+
+<!-- Bloc  -->
+<div class="jumbotron question">
+    
+    <div class="visible-pannel">
+        
+        <h2 id="code-3" >Doctrine</h2> <br>
+       ORM : Object-Relational Mapper <br>
+      <span class="display-4">Architecture :</span> <br>
+      <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/reference/architecture.html#architecture" target="blank">En savoir plus : ORM</a> <br>
+This chapter gives an overview of the overall architecture, terminology and constraints of Doctrine ORM. It is recommended to read this chapter carefully.
+
+Using an Object-Relational Mapper
+
+As the term ORM already hints at, Doctrine ORM aims to simplify the translation between database rows and the PHP object model. The primary use case for Doctrine are therefore applications that utilize the Object-Oriented Programming Paradigm. For applications that do not primarily work with objects Doctrine ORM is not suited very well.
+
+Requirements
+
+Doctrine ORM requires a minimum of PHP 7.1. For greatly improved performance it is also recommended that you use APC with PHP.
+
+Doctrine ORM Packages
+
+Doctrine ORM is divided into three main packages.
+
+Common
+DBAL (includes Common)
+ORM (includes DBAL+Common)
+    </div>
+    <br>
+    <div class="toggle-pannel">     
+        <h4 style="color: orange;">définition :</h4> <br>
+        <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/index.html" target="blanc">Doc Doctrine</a>
+
+        
+    <p> 
+    </p>
+    
+    </div>
+    <a href="#item-0" class="btn btn-info m-2">retour</a> 
+  </div>
+
+<!--Fin-->
+<!-- Code Bloc  -->
+<div class="jumbotron question">
+    
+    <div class="visible-pannel">
+        
+        <h2 id="code-4" >L'EntityManager</h2>
+    </div>
+    <br>
+    <div class="toggle-pannel">     
+        <h4 style="color: orange;">définition :</h4>
+        
+    <p> <span style="color: aliceblue;"  > <b> Excellent lien sur l'EntityManager :  </b></span> <br>
+    - persist($persist) <br>
+    - flush() <br>
+    - clear($nomEntity = null) <br>
+    - detach($entity) <br>
+    - contains($entity) <br>
+    - refresh($entity) <br>
+    - remove($entity) <br>
+
+        <a href="https://www.devnotebook.fr/symfony/lentitymanager-de-doctrine-pour-symfony" target="blanc">Lien info : L'entityManager</a>
+    </p>
+    
+    </div>
+    <a href="#item-0" class="btn btn-info m-2">retour</a> 
+  </div>
+
+<!--Fin-->
+
+<!-- Code Bloc  -->
+<div class="jumbotron question">
+    
+    <div class="visible-pannel">
+        
+        <h2 id="code-5" >number_format</h2>
+    </div>
+    <br>
+    <div class="toggle-pannel">     
+        <h4 style="color: orange;">définition :</h4>
+        
+    <p> formater avec des points et où virgules la lisibilitée d'une somme.
+         <br> <br>
+    Important : ne pas oublier les parenthèses pour le calcul <br>
+
+        <img src="capt_symfCod_1.png" alt="" class="img-thumbnail" width="350px" height="400px">
+  <br>ou plutôt : <br>   {{ ((order.carrierPrice  + order.getTotal) / 100) | number_format(2,"," , " ")}} €
+    </p>
+    
+    </div>
+    <a href="#item-0" class="btn btn-info m-2">retour</a> 
+  </div>
+
+<!--Fin-->
+
+    
+
+<br><br>
+<!--nouveau bloc-->
+
+<div class="container">
+    <h2 class="display-2">Un projet complet</h2>
+</div>
+        <!-- 1 -->
+        <div class="jumbotron">
+            
+            <div class="visible-pannel">
+                <h2 id="item-1" >1 -  La mise en place </h2>
+                
+                <!--<img src="../asset/images/croix.svg" alt="croix d'annim">-->
+            </div>
+            <div class="toggle-pannel">
+            
+                <h4 style="color:orange;"><b>prépa du projet</b></h4>
+                <p>- Dans la console <br> symfony new --full newProjet<br>- préparer la BD dans .env<br>DATABASE_URL="mysql://root:@127.0.0.1:3308/symfonylearn?serverVersion=mariadb-10.4.10" </p>  
+                <h4>Création de la BD</h4>
+                <p>php bin/console doctrine:database:create<br>ou<br>php bin/console d:d:c</p>
+                <h4 style="color:orange;">Création d'un nouveau fichier</h4>
+                <p>php bin/console make:entity Nom<br>symfony propose de créer et remplir les champs (name-price-descriptionimage)</p>
+                <h4 style="color:orange;">Migrer dans la BD</h4>
+                <h5 style="color:rgb(255, 238, 0);">après la création de l'entity<br>Symfony propose le code migration :</h5>
+                <p>php bin/console make:migration</p>
+                <h5 style="color:rgb(251, 255, 0);">puis le code pour migrer dans la BD :</h5>
+                <p>php bin/console doctrine:migration:migrate</p>
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <!-- 2 -->
+        
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-2">2 - Créer un jeu de fausses données Fixture, Faker </h2>
+                <!--<img src="../asset/images/croix.svg" alt="croix d'annim">-->
+            </div>
+            <div class="toggle-pannel">
+                <h4> Installation</h4>
+                
+                <h5>Installation du composant nécéssaire pour les fixtures</h5> 
+            <p>composer require orm-fixtures --dev</p> 
+            <h5>Remplir les infos dans la classe qui à été créer AppFixture.php</h5>
+            <img src="capt1.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" >
+            
+            <h5>Envoyer les données dans la BD</h5>
+            <p>php bin/console doctrine:fixture:load</p> 
+            <h5>- Faker -</h5>
+            <h4>(Générer des données aléatoires pour simulation)</h4>
+            <h5>lien du site</h5>
+                <p>
+                    <a href="https://github.com/fzaninotto/Faker" target="_blank">https://github.com/fzaninotto/Faker</a>
+                </p>
+                <h4>installation dans la console</h4>
+                <h4>Mise en place du service</h4>
+            <p>composer require fzaninotto/faker</p>  
+            <h5>rajouter le code dans AppFixture.php</h5>
+            <p>Choisir la langue et y ajouter toutes les données nécéssaires </p>
+            <img src="capt2.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+            <h5>Envoyer les données dans la BD</h5>
+            <p>php bin/console doctrine:fixture:load</p> 
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <!-- 3 Pagination -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-3">3 - Pagination avec Paginator </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+            <h4>Lien du site :</h4>
+                <p>
+                    <a href="https://github.com/KnpLabs/KnpPaginatorBundle" target="_blank">https://github.com/KnpLabs/KnpPaginatorBundle</a>
+                </p>
+                <h4>installation : </h4>
+                <p>composer require knplabs/knp-paginator-bundle</p> 
+                <h5>Créer un nouveau fichier dans config/package/</h5> 
+                <p>knp_paginator.yaml</p> 
+                <h5>ajouter l'exemple de la configuration sur le site :</h5>
+                <img src="capt3.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                <h4>Rectifier en même temps la présentation avec le lien Bootstrap</h4>
+                <p style="color:orange">@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig</p>
+                <h5>Dans le Repository</h5>
+                <p>Créer une nouvelle fonction findAllWithPaginator(): Query { }</p>
+                
+            <h4>exemple dans le code :</h4>
+            <img src="capt5.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+            <h4>Dans le controller adapter : </h4>
+            <p>$pagination = $paginator->paginate(<br>$query, /* query NOT result */<br>$request->query->getInt('page', 1), /*page number*/<br> 10 /*limit per page*/
+            );</p>
+            <h4>exemple (ne pas tenir compte de l'erreur) </h4>
+            <img src="capt6.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" >
+            <h5>Dans le Template </h5>
+            <img src="capt7.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" >
+            <h5>Pour finir</h5>
+            <p>Changer le language dans translation :  </p>          
+            <h4>avec un nouveau fichier -> KnpPaginatorBundle.fr.yaml et <br> label_previous : précédent<br>label_next: suivant</h4>
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <!-- 4 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-4" style="color:orange;">4 - les filtres</h2>
+                
+            </div>
+            <div class="toggle-pannel">
+                <h4>Créer une nouvelle classe à la main exemple ( RecherchePrix ) </h4>
+                <img src="capt8.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" >
+                <p>-</p>
+                <h4>Créer un dossier Form :</h4>
+                <p>php bin/console make:form RecherchePrixType </p>
+                <img src="capt9.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                <p>-</p>
+                <h4>Dans le controller</h4> 
+                <img src="capt10.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                <p>-</p>
+                <h5>Dans le Repository</h5> 
+                <img src="capt11.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                <p>-</p>
+                <h4>Template exemple : carte.html.twig</h4>
+                <img src="capt12.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                <p>-</p>
+                <h4>dans le sous template </h4>
+                <img src="capt13.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-5" style="color:orange;">CRUD </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+                <h4>Créer un nouveau controller</h4>
+                <p> <span style="color: rgb(218, 252, 125);" >php bin/console make:controller AdminController</span> <br>
+                    modifier la route pour twig (souligné) <br>
+                    screenshot 1 : <br>
+                    <img src="capt_symfAdm_1.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice"  viewBox="0 0 318 180" > 
+                    <!--twig ajouter la route dans la barre des taches -->
+                    <br>
+                    <br>
+                    Puis dans base.html.twig du template créer la route et rajouter le lien <br>
+                    <img src="capt_symfAdm_2.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice"  viewBox="0 0 318 180" > 
+                    <br>
+                    <br>
+                    On copie/colle le code dans le Controller <span style="color: yellow;" >CarteController</span> pour mettre en place l'admin <br>
+                    - Récupérer les infos de la fonction en utilisant l'injonction de dépendence et le intégre dans le <br>
+                    AdminController comme dans le screenshot 1 <br>
+                    - Modifier l'information avec la valeur <span style="color:yellow" >false </span>   dans le controller (ici) CarteController et à <span style="color:yellow" >true </span> <br>
+                    dans l'AdminController <br> <br>
+                    - Ajouter les boutons Modifier et Supprimer  dans le template <br>
+                    <img src="capt_symfAdm_3.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice"  viewBox="0 0 318 180" > <br>
+                    <br>
+                    - Puis le bouton success <br>
+                    <img src="capt_symfAdm_4.png" alt="exemple de code btn" class="img-thumbnail" width="450px" height="300px"   >
+
+
+
+                </p>  
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-6" style="color:orange;" >CRUD (suite) </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem, ipsum dolor sit amet </p>  
+        </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-7" style="color:orange;" >Gestion d'utilisateur </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem, ipsum dolor sit amet </p>  
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+    
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-8" style="color:orange;" >Login/logout </h2>
+               
+            </div>
+            <div class="toggle-pannel">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem, ipsum dolor sit amet </p>  
+            </div>
+            
+            <div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+            </div>
+        </div>
+    
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-9" style="color:orange;" >Les rôles </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem, ipsum dolor sit amet </p>  
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        
+        
+       
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-10" style="color:orange;" >La mise en ligne </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem, ipsum dolor sit amet </p>  
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <p></p>
+        <!-- 5 -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-11" style="color:orange;" > - Créer un calendrier de rdv </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+            <h5 style="color:orange;" >Les docs</h5>
+                <h4>Lien du site Packagist</h4>
+                <p>
+                    <a href="https://packagist.org/packages/tattali/calendar-bundle" target="_blank">https://packagist.org/packages/tattali/calendar-bundle</a>
+                </p>
+                <h4>Lien du site JavaScript Calandar</h4>
+                <p>
+                    <a href="https://fullcalendar.io/#demos" target="_blank">https://fullcalendar.io/#demos</a>
+                </p>
+                <a href="#item-0" class="btn btn-info m-2">retour</a> 
+            </div>
+        </div>
+        <p></p>
+        <!-- Bloc mise en place d'un projet -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-13" style="color:orange;" > - Panier </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+            <h5>Les docs</h5>
+                <h4>Lien du site Packagist</h4>
+                <p>
+                    <a href="https://packagist.org/packages/tattali/calendar-bundle" target="_blank">https://packagist.org/packages/tattali/calendar-bundle</a>
+                </p>
+                <h4>Lien du site JavaScript Calandar</h4>
+                <p>
+                    <a href="https://fullcalendar.io/#demos" target="_blank">https://fullcalendar.io/#demos</a>
+                </p>
+                <a href="#item-0" class="btn btn-info m-2">retour</a> 
+            </div>
+        </div>
+        <!-- fin -->
+        <!-- Bloc mise en place d'un projet -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="item-12" style="color:orange;" > - Mail Jet </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+            <h5>Les docs</h5>
+                <h4>Lien du site : </h4>
+                <p>
+                    <a href="https://fr.mailjet.com" target="_blank">Mailjet</a> <br>
+                    1 - s'inscrir ( DevInFrance ) et une fois fait <br>
+                    2 - attendre la réponse de mailJet pour poursuivre le code <br>
+                    3 - 
+
+
+                </p>
+
+                
+                
+            </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+        <!-- fin -->
+
+        <!-- Bloc des erreur -->
+        <div class="jumbotron question">
+            <div class="visible-pannel">
+                <h2 id="erreur-1" style="color:orange;" > ArrayField : conversion en string </h2>
+                
+            </div>
+            <div class="toggle-pannel">
+            <h5>dans OrderCrudController</h5>
+                <p>
+                    <img src="capt_symfEr_1.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                </p>
+                <h5>le message d'erreur</h5>
+                <p>extrait du projet e-commerce <br>
+                    <img src="capt_symfEr_2.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                </p>
+                <h5>la solution</h5>
+                <p> dans la classe OrderDetails rajouter une nouvelle fonction toString<br>
+                    pour pouvoir afficher le produit que se trouve dans la class Product <br>
+
+                    <img src="capt_symfErr_3.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                </p>
+                <h5>Vue sur le site</h5>
+                <p> 
+                    <img src="capt_symfEr_4.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                </p>
+                <h5>Rappel concaténation pour l'ajout des quantitées produits</h5>
+                <p> 
+                    <img src="capt_symfEr_5.png" alt="exemple de code" class="img-thumbnail" width="450px" height="300px"  preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" > 
+                </p>
+        </div>
+            <a href="#item-0" class="btn btn-info m-2">retour</a> 
+        </div>
+            </div>
+        </div>
+        <!-- fin -->
+        
+        </div>
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+       
+</body>
+</html>
